@@ -1,0 +1,13 @@
+:root{color:#243328;background:#f7f3e8;font:100%/1.6 system-ui,sans-serif}
+*{box-sizing:border-box}body{margin:0}a{color:inherit;text-underline-offset:.22em}
+.wrap{width:min(1120px,calc(100% - 36px));margin-inline:auto}
+.bar{border-bottom:1px solid #c8c3ad}.bar .wrap,nav{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.bar .wrap{padding-block:18px}
+.brand{font-weight:750;text-decoration:none}.skip{position:absolute;left:12px;top:12px;transform:translateY(-200%);background:white;padding:8px}.skip:focus{transform:none}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:35px;align-items:center;padding-block:clamp(42px,8vw,105px)}
+h1,h2,h3{font-family:Georgia,serif;line-height:1.12;margin:0 0 .45em}h1{font-size:clamp(2.6rem,6.5vw,5.7rem);letter-spacing:-.05em}h2{font-size:clamp(1.85rem,4vw,3rem)}h3{font-size:1.6rem}
+.eyebrow{font-size:.77rem;font-weight:800;letter-spacing:.13em;color:#805325}.lead{max-width:48ch;font-size:1.14rem}.button{display:inline-block;background:#243328;color:#fff;padding:11px 17px;border-radius:6px;text-decoration:none}
+.watch{display:grid;place-items:center;min-height:380px;border-radius:16px;background:radial-gradient(ellipse at 54% 36%,#536854,#24382a 72%);overflow:hidden}.dial{position:relative;width:min(63%,290px);aspect-ratio:1;border:12px solid #b99559;border-radius:50%;background:radial-gradient(circle,#263e31 58%,transparent 59%),repeating-conic-gradient(#dfc493 0 2deg,#263e31 2deg 30deg);box-shadow:0 22px 42px #142018}.dial i,.dial b{position:absolute;left:50%;top:50%;border-radius:4px;background:#f2d8a8}.dial i{width:8px;transform-origin:center bottom}.hour{height:24%;translate:-50% -100%;rotate:-52deg}.minute{height:36%;translate:-50% -100%;rotate:60deg}.dial b{width:14px;height:14px;translate:-50% -50%}
+.collection{background:#eae4d3;padding-block:44px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.cards article{background:#f7f3e8;padding:20px;border:1px solid #c8c3ad;border-radius:8px}.cards p:first-child{margin-top:0}.cards a{font-weight:650}
+.reading{max-width:720px;padding-block:40px}.reading article,.reading section{padding-block:26px;border-bottom:1px solid #c8c3ad;scroll-margin-top:24px}dt{font-weight:750}dd{margin:0 0 10px}
+footer{padding:22px 0;background:#243328;color:#fff}:focus-visible{outline:3px solid #a14a17;outline-offset:4px}
+@media(max-width:700px){.hero,.cards{grid-template-columns:1fr}.watch{min-height:270px}}
